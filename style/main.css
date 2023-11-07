@@ -1,0 +1,63 @@
+body{
+  color: #424242!important;
+}
+
+footer > div a:hover{
+  color: #208bf3!important;
+}
+
+main.container-md{
+  background-color: #fff!important;
+}
+.carousel-caption{
+  background-color: rgba(2, 117, 216,.4);
+}
+.card{
+  height: 100%;
+}
+.aboutus{
+  height: fit-content!important;
+}
+
+div.aboutus div.tab-content div.tab-pane div.theader{
+  text-align: center;
+  padding: 5px 32px;
+}
+
+div.aboutus div.tab-content div.tab-pane .row{
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+div.aboutus div.tab-content div.tab-pane .column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+div.aboutus div.tab-content div.tab-pane .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+div.aboutus div.tab-content div.tab-pane button.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+div.aboutus div.tab-content div.tab-pane button.btn:hover {
+  background-color: #ddd;
+}
+
+div.footer{
+  background-color: #424242!important;
+  color: #fff!important;
+  height: fit-content;
+}
+
+
