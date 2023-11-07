@@ -1,0 +1,240 @@
+*{border-radius: 2px;}
+
+#navbar {
+  transition: all 0.4s;
+}
+div#navbar-nav{
+  background-color: black!important;
+}
+#navbar-h #logo {
+  width: 73px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#navbar-h{}
+
+  #navbar-h .navbar-brand h3{
+  font-size: 3em!important;
+  font-weight: bold;
+  position: relative;
+  top: 14px;
+  font-style: italic;
+  color: rgba(12,0,0,.7)
+}
+
+.brand-icon-hide{
+  position: relative;
+  top: -69px;
+  font-size: 0em;
+}
+  #navbar div.container-md div.brand-icon img.img{
+    position: relative;
+    top: -2px;
+    width: 0;
+    height: 0;
+    border: none;
+    border-radius: 50%;
+  }
+
+.imgshow{
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgb(255, 255, 255);
+  transition: all .4s;
+}
+.imghide{
+   width: 0px!important;
+  height: 0px!important;
+  border: 0px solid rgb(255, 255, 255)!important;
+  transition: all .4s!important;
+}
+#navbar .pushLeft{
+  margin-left: 0 auto!important;
+}
+.hidelinks{
+  display: inline-block;
+}
+.sidenav{
+  display: none;
+  margin-top: px;
+  padding-top: 160px!important;
+  height: 100%;
+  
+}
+#main {
+  margin-left: 0;
+  transition: margin-left .5s;
+}
+
+ nav .showbtn{display: none;}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+@media (max-width:720px) {
+.hidelinks{
+  display: none;
+}
+  #navbar div.container-md ul.nav li a{
+    font-size: .7em;
+  }
+   #navbar #logo{
+    width: 63px;
+  }
+.sidenav {
+  display: block;
+  height: 100%!important;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  overflow-x: hidden;
+  overflow: hidden;
+  transition: all 0.5s;
+  padding-top: 60px;
+}
+ nav .showbtn{display: inline-block;}
+}
+
+@media (max-width:656px){
+  #navbar-h #logo {
+  width: 55px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+  #navbar-h .navbar-brand h3{
+  font-size: 3em!important;
+  font-weight: bold;
+  position: relative;
+  top: 14px;
+  font-style: italic;
+  color: rgba(12,0,0,.7)
+}
+}
+@media (max-width:552px){
+   #navbar-h #logo {
+  width: 45px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+  #navbar-h .navbar-brand h3{
+  font-size: 2em!important;
+  font-weight: bold;
+  position: relative;
+  top: 14px;
+  font-style: italic;
+  color: rgba(12,0,0,.7)
+}
+}
+
+@media (max-width:994px){
+  #navbar-h .navbar-brand h3{
+  font-size: 3.5em;
+  font-weight: bold;
+  position: relative;
+  top: 14px;
+  font-style: italic;
+  color: rgba(12,0,0,.7)
+}
+  #navbar div.container-md div.brand-icon span{
+  font-style: italic;
+  font-weight:bolder!important;
+  font-size: 1.4em;
+  padding-right: 6px;
+  border-right: solid rgba(255,255,255,.2) 3px
+}
+  #navbar div.container-md div.brand-icon img{
+    width: 42px;
+    height: 42px;
+    border: solid white;
+    border-radius: 50%;
+  }
+  .imgshow{
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgb(255, 255, 255);
+  transition: all .4s;
+}
+
+}
+@media (max-width:1000px){
+  #navbar #logo{
+    width: 63px;
+  }
+
+  #navbar div.container-md ul.nav li a{
+    font-size: .8em;
+  }
+}
+@media (max-width:412px){
+  #navbar #logo {
+  width: 63px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+#navbar div.container-md div.brand-icon span{
+  font-style: italic;
+  font-weight:bolder!important;
+  font-size: 1.2em;
+  padding-right: 6px;
+  border-right: solid rgba(255,255,255,.2) 3px;
+}
+  .brand-icon-hide{
+    
+  }
+  #navbar div.container-md div.brand-icon img{
+    width: 40px;
+    height: 40px;
+    border: solid white;
+    border-radius: 50%;
+  }
+  .imgshow{
+  width: 45px;
+  height: 45px;
+  border: 3px solid rgb(255, 255, 255);
+  transition: all .4s;
+}
+
+}
+.showSnav{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  padding-top: 60px;
+}
+
+.hideSnav{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  overflow-x: hidden;
+  transition: all 0.5s;
+  padding-top: 60px;
+}
+
+.pushMain{
+  margin-left: 250px;
+}
+
+.rePush{
+  margin-left: 0;
+}
+
+.nav-colored{
+background-color: rgba(0, 0, 0, 1.0)!important;
+transition: all .3s;
+}
+.nav-transparent{
+background-color: rgba(0, 0, 0, .4)!important;
+transition: all .3s;
+}
