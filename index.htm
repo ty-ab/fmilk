@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FamilyMilk</title>
+  <!--
+  <link rel="stylesheet" href="style/header.css">
+ -->
+  <link rel="stylesheet" href="style/newheader.css">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="script/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .myactive {
+      background-color: #667 !important;
+      color: white;
+    }
+
+    .m {
+      color: rgb(3, 0, 5);
+    }
+
+    
+  </style>
+
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > 30) {
+          $(".menu").css({ "background-color": "#fdfff5" });
+        }
+        else {
+          $(".menu").css({ "background-color": "rgba(253,255,245,.4)" });
+        }
+
+      })
+    })
+  </script>
+
+</head>
+
+<body class="" data-bs-scroll="">
+  <script type="text/javascript" src="script/main.js"></script>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="menu px-3 mb-3 fixed-top">
+    <div class="container-md">
+      <div class="d-flex justify-content-between">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none border-end pe-1">
+          <img src="icon/minifamily.png" class="bi me-2" width="50" height="50" alt="">
+          <span class="fs-4">&nbsp;Family Milk</span>
+        </a>
+
+        <ul class="nav nav-nav col-12 col-lg-auto ms-lg-auto mb-2 mb-md-0">
+          <li class=" hide-773"><a href="#" class="nav-link px-2 link-secondary"><i class="fas fa-home"></i>&nbsp;Home</a></li>
+          <li class="hide hide-773"><a href="#" class="nav-link px-2 link-dark"><i class="fas fa-users"></i>&nbsp;Family Team</a></li>
+          <li class="hide hide-773"><a href="#" class="nav-link px-2 link-dark">&nbsp;Customers</a></li>
+          <li class="hide hide-996"><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+          <li class="hidelinks">
+            <div class="dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                  class="fas fa-info-circle"></i>&nbsp;Info</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i class="fas fa-address-book"></i>&nbsp;Contact us</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-info-circle"></i>&nbsp;About</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <svg style="width: 25px; height: 25px;" class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+              </svg>
+            </a>
+        </li>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="container-md">
+
+    <!-- autoscroll image-->
+    <!-- Carousel -->
+    <div id="slide" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="8"></button>
+        <button type="button" data-bs-target="#slide" data-bs-slide-to="9"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slideshots/0.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>Long Shelf Milk</h3>
+            <p>We had such a great time in LA!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/1.jpg" alt="Chicago" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>WE ARE FAMILY</h3>
+            <p>Thank you, Chicago!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/2.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/3.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/4.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/5.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/6.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/7.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/8.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="slideshots/9.jpg" alt="New York" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+            <h3>EXCELLENT QUALITY</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!--end-->
+
+    <!-- our product-->
+    <div class="my-9 border-top border-bottom mx-0">
+      <p class="h4 alert alert-info">OUR PRODUCTS</p>
+
+      <div class="row row-cols-1 mb-1 row-cols-md-3 g-4">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="pcard/0.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="pcard/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="pcard/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="pcard/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--end-->
+
+    <!--about us-->
+    <div class="mx-0 my-5">
+      <div class="row">
+        <div class="col-md-7  aboutus">
+
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">About Us</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Galleries</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+              <div class="card">
+                <iframe height="480" src="https://www.youtube.com/embed/eT3rVCIw_nw"
+                  title="Family Milk Internal Launch inaguration12 02 19" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Food Safety Policy</h5>
+                  <p class="card-text">
+                    MB PLC is strongly committed to produce and provide safe, nutritious and high quality milk & milk
+                    product that fulfill applicable international, national and mutually agreed food safety and quality
+                    standards, regulatory and statutory requirements to the highest satisfaction of its customers.
+                    The key measure of its success is exceeding the needs and expectations of the customers.
+                  </p>
+                  <p class="card-text">
+                    With strong commitment and participation of the management and employees at all levels, the company
+                    trains, creates awareness, implements, maintains and continually improve the integrated food safety
+                    and
+                    quality management system; ensure allocation and effective utilization of resources; establish
+                    effective
+                    communication arrangement; prepare and respond to emergency situations and accidents; and ensure the
+                    continuing suitability, adequacy and effectiveness of the system.
+                  </p>
+                  <p class="card-text">The policy is communicated, understood, implemented, reviewed, updated and
+                    maintained
+                    at all levels of the organization.
+                  </p>
+                  <a href="#" class="">more.</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+              <div class="theader" id="myHeader">
+                <p>Click on the buttons to change the view.</p>
+                <button class="btn" onclick="one()">1</button>
+                <button class="btn myactive" onclick="two()">2</button>
+                <button class="btn" onclick="four()">4</button>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img src="galleries/g1.png" style="width:100%">
+                  <img src="galleries/g2.png" style="width:100%">
+                  <img src="galleries/g3.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="galleries/g4.png" style="width:100%">
+                  <img src="galleries/g5.png" style="width:100%">
+                  <img src="galleries/g6.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="galleries/g7.png" style="width:100%">
+                  <img src="galleries/g8.png" style="width:100%">
+                  <img src="galleries/g9.png" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="galleries/g10.png" style="width:100%">
+                  <img src="galleries/g11.png" style="width:100%">
+                  <img src="galleries/g12.png" style="width:100%">
+                </div>
+              </div>
+              <script>
+                // Get the elements with class="column"
+                var elements = document.getElementsByClassName("column");
+
+                // Declare a loop variable
+                var i;
+
+                // Full-width images
+                function one() {
+                  for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "100%";  // IE10
+                    elements[i].style.flex = "100%";
+                  }
+                }
+
+                // Two images side by side
+                function two() {
+                  for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "50%";  // IE10
+                    elements[i].style.flex = "50%";
+                  }
+                }
+
+                // Four images side by side
+                function four() {
+                  for (i = 0; i < elements.length; i++) {
+                    elements[i].style.msFlex = "25%";  // IE10
+                    elements[i].style.flex = "25%";
+                  }
+                }
+
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("myHeader");
+                var btns = header.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                  btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("myactive");
+                    current[0].className = current[0].className.replace(" myactive", "");
+                    this.className += " myactive";
+                  });
+                }
+              </script>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md aboutus">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--end-->
+
+    <!--number off assets-->
+    <div class="row row-cols-1 mb-1 row-cols-md-3 g-4 alert alert-dark" role="alert">
+
+      <div class="col-md-3 text-center">
+        <h2 class="card-title">Special title treatment</h2>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <h2 class="card-title">Special title treatment</h2>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <h2 class="card-title">Special title treatment</h2>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="col-md-3 text-center">
+        <h2 class="card-title">Special title treatment</h2>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+
+    </div>
+    <!--end-->
+
+    <!--latest product-->
+    <div class="latest-product row justify-content-around">
+      <div class="p-3 bg-light ml-20 text-dark">Latest Product</div>
+      <div class="card" style="width: 18rem;">
+        <!--<img src="..." class="card-img-top" alt="...">-->
+        <div class="card-body">
+          <img src="latestprod/newprod1.png" alt="" width="235">
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <img src="latestprod/newprod2.png" alt="" width="235">
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <img src="latestprod/newprod3.png" alt="" width="235">
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <img src="latestprod/newprod4.png" alt="" width="235">
+        </div>
+      </div>
+    </div>
+    <!--end-->
+
+    <!--Temp Begin-->
+
+    <!--Temp end-->
+
+    <!--manging team-->
+    <div class="row row-cols-1 mb-1 mt-3 row-cols-md-3 g-4">
+      <div class="p-3 bg-light ml-20 text-dark col-12">Latest Product</div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="mt/m1.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="mt/m2.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="mt/m3.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="mt/m4.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="mt/m5.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="mt/m6.jpg" class="card-img-top" alt="..." width="250" height="250">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--end-->
+
+    <!--quote-->
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>Family milk aim to provide high quality, affordable and nutritious pasteurized milk and milk products to the
+          local market ,we distribute them to diversified customers based in all Ethiopian ,they are :-
+          Ethiopian Airlines,
+          Hotels,
+          Mini and Large Super Markets,
+          Hospitals, etc...</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+    <!--end-->
+
+    <!--our client-->
+
+    <!--end-->
+  </main>
+
+  <div class="footer container-fluid">
+    <footer class="py-5 container-md">
+      <div class="row justify-content-between">
+        <div class="col-2">
+          <h5>Menu</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-home"></i>&nbsp;Home</a> </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-users"></i>&nbsp;Family
+                Team</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">&nbsp;Our Customers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-address-book"></i>&nbsp;Contact us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-info-circle"></i>&nbsp;About</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-2">
+          <h5>Our Products</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-home"></i>&nbsp;Home</a> </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-users"></i>&nbsp;Family
+                Team</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">&nbsp;Our Customers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-address-book"></i>&nbsp;Contact us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-info-circle"></i>&nbsp;About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h5>Our Custumers</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-home"></i>&nbsp;Home</a> </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-users"></i>&nbsp;Family
+                Team</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">&nbsp;Our Customers</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-address-book"></i>&nbsp;Contact us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i
+                  class="fas fa-info-circle"></i>&nbsp;About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Contact us</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-block w-100 gap-2">
+              <label for="exampleFormControlTextarea1" class="form-label visually-hidden">Example textarea</label>
+              <textarea class="form-control my-1" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="d-block w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control my-1" placeholder="Email address">
+              <button class="btn btn-primary my-1" type="button">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p class="copy"> </p>
+        <script>
+          var date = new Date()
+          document.getElementsByClassName('copy')[0].innerHTML = "&copy; " + date.getFullYear() +" Company, Inc. All rights reserved."
+        </script>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="script/all.min.js"></script>
+
+</html>
